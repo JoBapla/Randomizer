@@ -1,3 +1,29 @@
 body{
     background-color: #D6EADF;
 }
+
+.test{
+    
+  
+}
+
+.test button{
+    min-width: 200px;
+    min-height: 200px;
+    opacity: 0;
+    animation-name: butt;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes butt{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

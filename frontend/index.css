@@ -52,12 +52,18 @@ body{
 }
 
 #set{
+    opacity: 0;
+    animation-delay: 1s;
     animation-name: set;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #begin{
+    opacity: 0;
+    animation-delay: 1s;
     animation-name: begin;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -65,11 +71,17 @@ body{
     0%{
         transform: translate(150%,0px);
     }
+    100%{
+        opacity: 1;
+    }
 
 }
 @keyframes begin{
     0%{
         transform: translate(-150%,0px);
+    }
+    100%{
+        opacity: 1;
     }
 
 }
