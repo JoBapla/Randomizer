@@ -2,12 +2,9 @@ body{
     background-color: #D6EADF;
 }
 
-.test{
-    
-  
-}
 
 .test button{
+    font-size: 100px;
     min-width: 200px;
     min-height: 200px;
     opacity: 0;
@@ -26,4 +23,9 @@ body{
     100%{
         opacity: 1;
     }
+}
+
+h1, img{
+    float: right;
+    
 }
