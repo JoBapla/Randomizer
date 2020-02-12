@@ -26,11 +26,10 @@ function item(){
     let x=document.getElementById("bar").value;
     document.getElementById("bar").value="";
     bank.push(x);
-    let para=document.createElement("P");
-    let words= document.createTextNode(bank[bank.length-1]);
-    para.appendChild(words);
-    document.getElementById("test").appendChild(para); 
-    
+    var node = document.createElement("LI");                 
+    var textnode = document.createTextNode(bank[bank.length-1]);         
+    node.appendChild(textnode);                              
+    document.getElementById("bank").appendChild(node);  
     
 }
     

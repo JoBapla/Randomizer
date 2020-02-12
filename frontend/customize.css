@@ -69,19 +69,22 @@ h1, img{
 }
 
 
-p{
+#test{
+   
+}
+
+ol{
     font-family: 'Open Sans', sans-serif;
-    
-    background-color: rgb(233, 243, 238);
     color: #809BCE;
-    margin: auto;
-    
     overflow: auto;
-    padding: 10px;
-    width: 70%;
-    height: 50vh;
     text-align: center;
     font-size: 100px;
+    margin: auto;
+    background-color: rgb(233, 243, 238);
+    width: 70%;
+    height: 50vh;
+    list-style: none;
+    
 }
 
 
