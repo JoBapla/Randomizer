@@ -48,14 +48,17 @@ button{
     }
 }
 
-h1, img{
-    float: right;
-    
+#temp{
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 80%;    
 }
+
 
 #bar{
     border: 5px solid #ccc;
-    margin-left: 10%;
+    margin: auto;
     font-size: 60px;
     margin-top: 30%;
     min-height: 75px;
