@@ -6,15 +6,7 @@
         document.getElementById("fill").src=data.message;
     
     });
-   
-    
-    
-    // .then(function(x) {
-        
 
-
-    // });
-    // console.log(xy);
 }
 
 
@@ -25,9 +17,21 @@ function weather(){
         document.getElementById("temp").innerHTML=Math.round(stats.main.temp)+"°C"
         document.getElementById("weatherIcon").src="weather/" + stats.weather[0].main + ".png";
         
-            
     });
 
+}
+
+let bank=new Array();
+function item(){
+    let x=document.getElementById("bar").value;
+    document.getElementById("bar").value="";
+    bank.push(x);
+    let para=document.createElement("P");
+    let words= document.createTextNode(bank[bank.length-1]);
+    para.appendChild(words);
+    document.getElementById("test").appendChild(para); 
+    
+    
 }
     
     

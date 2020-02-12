@@ -2,18 +2,41 @@ body{
     background-color: #D6EADF;
 }
 
+.buttons{
+    text-align: center;
+}
 
-.test button{
+button{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    background-color: #EAC4D5;
+    color: white;
+    border: 2px solid rgba(155, 59, 102, 0.74);
+    box-shadow:0px 8px  rgb(189, 92, 135);
+    
+    min-height: 125px;
+    padding: 15px 0px;
+    margin-bottom: 7%;
     font-size: 100px;
-    min-width: 200px;
-    min-height: 200px;
-    opacity: 0;
+    
+    margin-top: 10%;
+    font-size: 100px;
+    min-width: 325px;
+    
+    opacity: 0; 
     animation-name: butt;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     
 }
+
+#add{
+    margin-left: 5%;    
+}
+
+
 
 
 @keyframes butt{
@@ -29,3 +52,37 @@ h1, img{
     float: right;
     
 }
+
+#bar{
+    border: 5px solid #ccc;
+    margin-left: 10%;
+    font-size: 60px;
+    margin-top: 30%;
+    min-height: 75px;
+    transition: 0.5s;
+
+    
+}
+#bar[type=text]:focus {
+    border: 5px solid #555;
+    
+}
+
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    
+    background-color: rgb(233, 243, 238);
+    color: #809BCE;
+    margin: auto;
+    
+    overflow: auto;
+    padding: 10px;
+    width: 70%;
+    height: 50vh;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+
