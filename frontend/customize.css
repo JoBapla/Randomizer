@@ -68,11 +68,11 @@ h1, img{
     
 }
 
-
-#test{
-   
+@keyframes list{
+    0%{
+        opacity: 0%;
+    }
 }
-
 ol{
     font-family: 'Open Sans', sans-serif;
     color: #809BCE;
@@ -85,7 +85,16 @@ ol{
     height: 50vh;
     list-style: none;
     
+    
 }
 
+ol li{
+    animation-name: butt;
+    animation-duration: 1s;
+}
 
+#bar:focus::placeholder{
+    visibility: hidden;
+    
+}
 

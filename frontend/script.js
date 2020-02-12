@@ -23,13 +23,20 @@ function weather(){
 
 let bank=new Array();
 function item(){
-    let x=document.getElementById("bar").value;
-    document.getElementById("bar").value="";
-    bank.push(x);
-    var node = document.createElement("LI");                 
-    var textnode = document.createTextNode(bank[bank.length-1]);         
-    node.appendChild(textnode);                              
-    document.getElementById("bank").appendChild(node);  
+    if(document.getElementById("bar").value != ""){
+        let x=document.getElementById("bar").value;
+        document.getElementById("bar").value="";
+        bank.push(x);
+        var node = document.createElement("LI");                 
+        var textnode = document.createTextNode(bank.length+". "+bank[bank.length-1]);         
+        node.appendChild(textnode);                              
+        document.getElementById("bank").appendChild(node);
+        document.getElementById("bar").placeholder= "add item"  
+    }
+    else{
+        document.getElementById("bar").placeholder= "ENTER VALUE!";
+        
+    }
     
 }
     
