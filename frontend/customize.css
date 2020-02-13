@@ -75,6 +75,9 @@ button{
     0%{
         opacity: 0%;
     }
+    100%{
+        opacity: 100%;
+    }
 }
 ol{
     font-family: 'Open Sans', sans-serif;
@@ -94,6 +97,20 @@ ol{
 ol li{
     animation-name: butt;
     animation-duration: 1s;
+    display: inline;
+}
+
+ol a{
+    
+    opacity: 0%;
+    animation-name: butt;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    text-decoration: none;
+    margin-left: 0px;
+    
 }
 
 #bar:focus::placeholder{

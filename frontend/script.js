@@ -29,10 +29,21 @@ function item(){
         bank.push(x);
         
         var link= document.createElement("A");
-        link.setAttribute("href",href="index.html");
+        link.setAttribute("onClick","remove()");
         link.setAttribute('id',bank.length);
-        link.innerHTML="<li>"+bank.length+". "+bank[bank.length-1]+"</li>";
+        link.innerHTML="x";
+
+        var link2= document.createElement("LI");
+        link2.setAttribute('id',bank.length);
+        link2.innerHTML=bank.length+". "+bank[bank.length-1];
+
         document.getElementById("bank").appendChild(link);
+        document.getElementById("bank").appendChild(link2);
+        document.getElementById("bank").appendChild(document.createElement("BR"));
+
+
+
+        //<li>"+bank.length+". "+bank[bank.length-1]+"</li>
         
         // var node = document.createElement("LI");  
         // node.setAttribute('id',bank.length);               
@@ -48,6 +59,12 @@ function item(){
         
     }
     
+}
+
+function remove(){
+    
+    var element = document.getElementById(elementId);
+    element.parentNode.removeChild(element);
 }
     
     
