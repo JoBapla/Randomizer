@@ -7,6 +7,8 @@
     
     });
 
+
+
 }
 
 
@@ -19,6 +21,12 @@ function weather(){
         
     });
 
+    // console.log(sessionStorage.length);
+    // for(let i=0; i<sessionStorage.length; i++){
+    //     let key=sessionStorage.key(i);
+    //     console.log(sessionStorage.getItem(key));
+    // }
+
 }
 
 let bank=new Array();
@@ -29,30 +37,24 @@ function item(){
         bank.push(x);
         
         var link= document.createElement("A");
-        link.setAttribute("onClick","remove()");
+        link.setAttribute("onClick","remove(this.id)");
         link.setAttribute('id',bank.length);
         link.innerHTML="x";
 
         var link2= document.createElement("LI");
-        link2.setAttribute('id',bank.length);
-        link2.innerHTML=bank.length+". "+bank[bank.length-1];
+        link2.setAttribute('id',"word"+bank.length);
+        link2.innerHTML=bank[bank.length-1];
 
         document.getElementById("bank").appendChild(link);
         document.getElementById("bank").appendChild(link2);
-        document.getElementById("bank").appendChild(document.createElement("BR"));
+        let line= document.createElement("BR");
+        line.setAttribute('id',"line"+bank.length);
+        document.getElementById("bank").appendChild(line);
 
-
-
-        //<li>"+bank.length+". "+bank[bank.length-1]+"</li>
+   
+       //sessionStorage.setItem(bank.length.toString(),x.toString());
+       // console.log(sessionStorage.getItem(bank.length.toString()));
         
-        // var node = document.createElement("LI");  
-        // node.setAttribute('id',bank.length);               
-        // var textnode = document.createTextNode(bank.length+". "+bank[bank.length-1]);         
-        // node.appendChild(textnode);                              
-        // document.getElementById("bank").appendChild(node);
-        
-        // document.getElementById("bar").placeholder= "add item";
-        // console.log(document.getElementById("2"));  
     }
     else{
         document.getElementById("bar").placeholder= "ENTER VALUE!";
@@ -61,10 +63,12 @@ function item(){
     
 }
 
-function remove(){
+function remove(elementId){
+    document.getElementById("word"+elementId).remove();
+    document.getElementById("line"+elementId).remove();
+    document.getElementById(elementId).remove();
     
-    var element = document.getElementById(elementId);
-    element.parentNode.removeChild(element);
+    
 }
     
     

@@ -107,9 +107,9 @@ ol a{
     animation-delay: 0.5s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    position: relative;
     text-decoration: none;
-    margin-left: 0px;
+    color: #555;
+    float: left;
     
 }
 
